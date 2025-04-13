@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: black;
+  background-color: black.
   padding: 6px;
   border-radius: 8px;
   width: 300px;
@@ -502,3 +502,116 @@ background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
 } 
 
 /* ############################# End ofPartie D Progresse duration d audio #############################*/
+/* Mobile Responsiveness */
+@media (max-width: 768px) { 
+  .lijamaekolchi {
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+   
+  .w-50.mx-auto {
+    width: 100% !important;
+  }
+   
+  .radio-input {
+    width: 100%;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  .radio-input .label {
+    width: 70px;
+    height: 70px;
+  }
+   
+  .wave-menu {
+    width: 150px;
+    height: 40px;
+  }
+  
+  .wave-menu li {
+    margin: 0 4px;
+  }
+   
+  .slider {
+    margin-top: 10px;
+    transform: translateX(-20px);
+  }
+  
+  .slider .volume {
+    top: 70px;
+    left: 40px;
+  }
+   
+  .main {
+    padding: 0.8em;
+    margin: 0.8em;
+  }
+  
+  .currentplaying {
+    margin: 0.5em;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) { 
+  .lijamaekolchi {
+    padding: 10px;
+  } 
+  .ms-4 {
+    margin-left: 5px !important;
+  } 
+  .radio-input {
+    height: 80px;
+  }
+  
+  .radio-input .label {
+    width: 60px;
+    height: 60px;
+    padding: 6px 4px;
+  }
+  
+  .label .text {
+    font-size: 12px;
+  } 
+  .wave-menu {
+    width: 120px;
+    height: 35px;
+  }
+  
+  .col-2 {
+    flex: 0 0 auto;
+    width: 20% !important;
+  }
+  
+  .col-9 {
+    flex: 0 0 auto;
+    width: 75% !important;
+  }
+   
+  .slider {
+    --slider-width: 120px;
+    transform: translateX(-30px);
+    margin-left: 70px;
+  }
+  
+  .slider .volume {
+    top: 74px;
+    left: 50px;
+    --icon-size: 24px;
+  } 
+  .progDuration::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .progDuration::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+  } 
+  .time-display {
+    font-size: 12px;
+  }
+}
+
